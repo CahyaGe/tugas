@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'kone.php';
+			$o	= $_POST['nama'];
 			$j	= $_POST['tugas'];
 			$n	= $_POST['absen'];
 			$p	= $_POST['uts'];
@@ -22,7 +23,7 @@ include 'kone.php';
 	$nim=$_POST['nim'];
 
 	
-	$proses=mysqli_query($dbcon,"UPDATE data SET tugas='$j', absen='$n', uts='$p',uas='$d', grade='$bobot' where nim='$nim'");
+	$proses=mysqli_query($dbcon,"UPDATE data SET n_mahasiswa='$o', tugas='$j', absen='$n', uts='$p',uas='$d', grade='$bobot' where nim='$nim'");
 	if ($proses) {
 		echo "<script> alert('Data berhasil di input'); document.location='admin.php' </script>";
 	}
