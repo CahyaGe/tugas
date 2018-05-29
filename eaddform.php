@@ -29,7 +29,7 @@
 						?>
 						<div class="form-group">
 								<label>Nama Mahasiswa</label>
-								<input name="absen" value="<?php echo $s['n_mahasiswa'];?>" type="text" class="form-control" id="" placeholder="Masukan Nilai absen" required="required">
+								<input name="nama" value="<?php echo $s['n_mahasiswa'];?>" type="text" class="form-control" id="" placeholder="Masukan Nama Mahasiswa" required="required">
 							</div>
 						<label>Tugas</label>
 						<input type="hidden" name="nim" value="<?php echo $id;?>" type="text" class="form-control" id="" required="required">
